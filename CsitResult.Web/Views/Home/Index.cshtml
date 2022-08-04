@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CsitResult.Data.Models.Student>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    There are @Model.Count() Students
+</div>
+<ul>
+    @foreach (var Student in Model)
+    {
+        <li>@Student.Name</li>
+    }
+</ul>
+
