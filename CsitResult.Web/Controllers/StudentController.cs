@@ -10,8 +10,8 @@ namespace CsitResult.Web.Controllers
 {
     public class StudentController : Controller
     {
-        IStudentData db;
-        
+        private readonly IStudentData db;
+
         public StudentController(IStudentData db)
         {
             this.db = db;
