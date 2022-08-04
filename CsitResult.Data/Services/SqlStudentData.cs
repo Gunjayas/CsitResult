@@ -22,6 +22,13 @@ namespace CsitResult.Data.Services
             db.SaveChanges();
         }
 
+        public void Delete(int id)
+        {
+            var student = db.Students.Find(id);
+            db.Students.Remove(student);
+            db.SaveChanges();
+        }
+
         public Student Get(int id)
         {
             return db.Students.FirstOrDefault(r => r.Id == id);

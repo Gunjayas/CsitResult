@@ -45,5 +45,13 @@ namespace CsitResult.Data.Services
                 existing.SymbolNumber = student.SymbolNumber;
             }
         }
+        public void Delete(int id)
+        {
+            var student = Get(id);
+            if (student != null)
+            {
+                students.Remove(student);
+            }
+        }
     }
 }

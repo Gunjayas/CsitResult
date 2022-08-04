@@ -12,5 +12,6 @@ namespace CsitResult.Data.Services
         Student Get(int id);
         void Add(Student student);
         void Update(Student student);
+        void Delete(int id);
     }
 }
